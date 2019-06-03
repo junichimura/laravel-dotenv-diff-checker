@@ -1,0 +1,25 @@
+{
+    "name": "junichimura/laravel-dotenv-diff-checker",
+    "require": {
+        "laravel/framework": "^5.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "junichimura",
+            "email": "jfujimura13@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Junichimura\\LaravelDotenvDiffChecker\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Junichimura\\LaravelDotenvDiffChecker\\CommandServiceProvider"
+            ]
+        }
+    }
+}
