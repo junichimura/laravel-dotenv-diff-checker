@@ -106,10 +106,10 @@ class DotenvDiffCheckerCommand extends Command
     }
 
     private function appendPrefix($date){
-        return sprintf("# === [%s] dotenv:check コマンドにより自動的に追加 ここから ===\n", $date);
+        return sprintf("# === [%s] Environment variable added by \"A\" command. -> ===\n", $date);
     }
 
     private function appendSuffix($date){
-        return sprintf("# === [%s] dotenv:check コマンドにより自動的に追加 ここまで ===\n", $date);
+        return sprintf("# === <- [%s] Environment variable added by \"A\" command. ===\n", $date);
     }
 }
